@@ -1,6 +1,24 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 
 export default function LoadingScreen() {
+  const [dark, setDark] = useState(() => {
+    if (typeof window === 'undefined') return false
+    const saved = localStorage.getItem('theme')
+    if (saved) return saved === 'dark'
+    return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+  })
+  useEffect(() => {
+    const root = document.querySelector('html')
+    if (dark) {
+      root.setAttribute('data-theme', 'dark')
+      localStorage.setItem('theme', 'dark') 
+    } else {
+      root.setAttribute('data-theme', 'light')
+      localStorage.setItem('theme', 'light')
+    }
+  }, [dark])
+
+
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-gradient-to-b from-gray-50 to-gray-100 text-gray-900 dark:from-gray-900 dark:to-gray-950 dark:text-gray-200">
       {/* subtle dotted grid */}

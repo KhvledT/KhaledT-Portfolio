@@ -68,17 +68,19 @@ export default function ProjectDetailsPage() {
               </div>
             ) : null}
 
-            {project.links?.demo || project.links?.github ? (
+            {(() => {
+              const display = project.links?.display || (project.links?.demo && project.links?.github ? 'both' : project.links?.demo ? 'demo' : project.links?.github ? 'github' : null)
+              return display ? (
               <div className="rounded-2xl border border-gray-200 bg-white p-5 shadow-sm dark:border-gray-700 dark:bg-gray-800">
                 <h3 className="text-base font-semibold text-blue-600 dark:text-blue-300">Links</h3>
                 <div className="mt-3 flex flex-wrap items-center gap-3">
-                  {project.links?.demo ? (
+                  {(display === 'both' || display === 'demo') && project.links?.demo ? (
                     <a href={project.links.demo} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-lg bg-blue-600 px-4 py-2 text-white shadow-sm transition hover:brightness-110 dark:bg-blue-400 dark:text-gray-900">
                       <i className="fa-solid fa-arrow-up-right-from-square"></i>
                       Live Demo
                     </a>
                   ) : null}
-                  {project.links?.github ? (
+                  {(display === 'both' || display === 'github') && project.links?.github ? (
                     <a href={project.links.github} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-lg border border-blue-600 px-4 py-2 text-blue-600 transition hover:bg-blue-50 dark:border-blue-300 dark:text-blue-300 dark:hover:bg-gray-800">
                       <i className="fa-brands fa-github"></i>
                       GitHub
@@ -86,7 +88,8 @@ export default function ProjectDetailsPage() {
                   ) : null}
                 </div>
               </div>
-            ) : null}
+              ) : null
+            })()}
 
             <div>
               <Link to="/projects" className="inline-flex items-center gap-1 text-blue-600 underline underline-offset-4 dark:text-blue-300">
