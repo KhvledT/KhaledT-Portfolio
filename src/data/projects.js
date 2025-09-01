@@ -4,6 +4,12 @@ import Gerold2 from '../assets/imgs/Gerold-Portfolio/Gerold-Portfolio-2.png'
 import Gerold3 from '../assets/imgs/Gerold-Portfolio/Gerold-Portfolio-3.png'
 import Gerold4 from '../assets/imgs/Gerold-Portfolio/Gerold-Portfolio-4.png'
 
+// Recipes App
+import Recipes1 from '../assets/imgs/Recipes-App/Recipes-App-1.png'
+import Recipes2 from '../assets/imgs/Recipes-App/Recipes-App-2.png'
+import Recipes3 from '../assets/imgs/Recipes-App/Recipes-App-3.png'
+import Recipes4 from '../assets/imgs/Recipes-App/Recipes-App-4.png'
+
 // Social Media App
 import Social1 from '../assets/imgs/Social-Media-App/Social-Media-App-1.png'
 import Social2 from '../assets/imgs/Social-Media-App/Social-Media-App-2.png'
@@ -62,6 +68,27 @@ export const projects = [
     links: {
       display: 'demo',
       demo: 'https://fork-flame-e.netlify.app/',
+    },
+  },
+  {
+    id: 'recipes-app',
+    title: 'Recipes App',
+    image: Recipes1, // خلي بالك تضيف صورة رئيسية للمشروع عندك في الصور
+    images: [Recipes1, Recipes2, Recipes3, Recipes4], // لو عندك صور متعددة للـ UI
+    summary: 'Interactive recipes website with categorized food search and API integration.',
+    details: `Recipes App is a dynamic food recipes platform built with React, providing users with the ability to browse and search for meals seamlessly. 
+    The project leverages React Router for smooth navigation, Axios for API integration, and Hero UI for a clean, modern interface. 
+    The responsive design ensures an optimized experience across all devices, offering a simple and engaging way for users to explore new meals.`,
+    tech: [
+      'React',
+      'React Router',
+      'Axios',
+      'Hero UI',
+    ],
+    links: {
+      display: 'demo',
+      demo: 'https://recipes-app-e.netlify.app/',
+      github: 'https://github.com/KhvledT/Recipes',
     },
   },
   {
