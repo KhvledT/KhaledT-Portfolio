@@ -28,22 +28,65 @@ import ForkFlame2 from '../assets/imgs/Fork-Flame/Fork-Flame-2.png'
 import ForkFlame3 from '../assets/imgs/Fork-Flame/Fork-Flame-3.png'
 import ForkFlame4 from '../assets/imgs/Fork-Flame/Fork-Flame-4.png'
 
+// WatchIt
+import WatchIt1 from '../assets/imgs/WatchIt/WatchIt-1.png'
+import WatchIt2 from '../assets/imgs/WatchIt/WatchIt-2.png'
+import WatchIt3 from '../assets/imgs/WatchIt/WatchIt-3.png'
+import WatchIt4 from '../assets/imgs/WatchIt/WatchIt-4.png'
+import WatchIt5 from '../assets/imgs/WatchIt/WatchIt-5.png'
+
 export const projects = [
   {
     id: 'social-media-app',
     title: 'Linkup – Social Media Platform',
     image: Social1,
     images: [Social1, Social2, Social3, Social4],
-    summary: 'A modern social media platform with real-time updates, secure authentication, and interactive user experience.',
-    details: `Linkup is a full-featured social media platform built with React and Tailwind CSS, designed for a responsive and scalable architecture. 
-    It includes secure user authentication with signup, login, and session handling. 
-    Users can manage their profiles, create dynamic posts with media support, and engage in real-time interactions through comments and live updates. 
-    The platform delivers an engaging and modern experience with smooth performance across devices.`,
-    tech: ['React', 'Firebase', 'Tailwind CSS'],
+    summary: 'A modern social media platform with infinite scroll, real-time updates, and enhanced developer tools for seamless user experience.',
+    details: `Linkup is a full-featured social media platform built with React, offering a responsive and scalable architecture. 
+    It includes secure user authentication with signup, login, and session handling using React Hook Form. 
+    Users can manage profiles, create dynamic posts with media support, and interact in real-time with comments and live updates. 
+    Infinite scroll ensures a smooth browsing experience, while TanStack Query and Axios optimize data fetching and caching. 
+    Styled with Tailwind CSS and Hero UI, the app delivers a modern interface. 
+    React Router DOM handles seamless navigation, and React DevTools integration supports debugging and performance monitoring during development.`,
+    tech: [
+      'React',
+      'React Router DOM',
+      'TanStack Query',
+      'React DevTools',
+      'Axios',
+      'Hero UI',
+      'React Hook Form',
+      'Infinite Scroll',
+      'Tailwind CSS',
+    ],
     links: {
       display: 'both',
       demo: 'https://linkup-social-media-app.netlify.app',
       github: 'https://github.com/KhvledT/Linkup',
+    },
+  },
+  {
+    id: 'watchit',
+    title: 'WatchIt',
+    image: WatchIt1,
+    images: [WatchIt1, WatchIt2, WatchIt3, WatchIt4, WatchIt5],
+    summary: 'Movies & TV shows platform with trending, popular, trailers, and reviews powered by TMDB API.',
+    details: `WatchIt is a modern entertainment platform that allows users to explore movies and TV shows in detail. 
+    The app integrates TMDB API to provide trending and popular titles, trailers, and user reviews. 
+    Built with React and styled using Tailwind CSS and Hero UI, it ensures a responsive and visually appealing experience. 
+    React Router enables seamless navigation, while TanStack Query and Axios are used for optimized data fetching and state management.`,
+    tech: [
+      'React',
+      'React Router',
+      'TanStack Query',
+      'Axios',
+      'Tailwind CSS',
+      'Hero UI',
+    ],
+    links: {
+      display: 'both',
+      demo: 'https://watchit-e.netlify.app/',
+      github: 'https://github.com/KhvledT/WatchIt',
     },
   },
   {
@@ -73,8 +116,8 @@ export const projects = [
   {
     id: 'recipes-app',
     title: 'Recipes App',
-    image: Recipes1, // خلي بالك تضيف صورة رئيسية للمشروع عندك في الصور
-    images: [Recipes1, Recipes2, Recipes3, Recipes4], // لو عندك صور متعددة للـ UI
+    image: Recipes1, 
+    images: [Recipes1, Recipes2, Recipes3, Recipes4],
     summary: 'Interactive recipes website with categorized food search and API integration.',
     details: `Recipes App is a dynamic food recipes platform built with React, providing users with the ability to browse and search for meals seamlessly. 
     The project leverages React Router for smooth navigation, Axios for API integration, and Hero UI for a clean, modern interface. 

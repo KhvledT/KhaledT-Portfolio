@@ -164,7 +164,7 @@ function Carousel({ images, title }) {
               />
             ))}
           </div>
-          <div className="mt-4 flex items-center gap-3 overflow-x-auto pb-1">
+          <div className="mt-4 flex items-center gap-3 overflow-x-auto pb-1 thumbs-scroll">
             {validImages.map((src, i) => (
               <button
                 key={i}

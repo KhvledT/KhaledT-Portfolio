@@ -22,3 +22,79 @@ h1, h2, h3, h4, h5, h6 {
 button, input[type="submit"], input[type="reset"] ,input[type="button"],a{
   cursor: pointer;
 }
+
+/* Global scrollbar design (light/dark) */
+html {
+  scrollbar-width: thin; /* Firefox */
+  scrollbar-color: #2563eb #1e3a8a; /* thumb track */
+}
+
+[data-theme="dark"] html {
+  scrollbar-color: #60a5fa #1e3a8a; /* thumb track */
+}
+
+/* Chromium/WebKit */
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+::-webkit-scrollbar-track {
+  background: #1e3a8a; /* dark blue */
+}
+::-webkit-scrollbar-thumb {
+  background-color: #2563eb; /* blue-600 */
+  border-radius: 9999px;
+  border: 3px solid #e5e7eb;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #1d4ed8; /* blue-700 */
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+[data-theme="dark"] ::-webkit-scrollbar-track {
+  background: #1e3a8a; /* dark blue */
+}
+[data-theme="dark"] ::-webkit-scrollbar-thumb {
+  background-color: #60a5fa; /* blue-400 */
+  border-color: #111827;
+}
+[data-theme="dark"] ::-webkit-scrollbar-thumb:hover {
+  background-color: #3b82f6; /* blue-500 */
+}
+
+/* Horizontal scrollbar for thumbnails under images on Project Details */
+.thumbs-scroll {
+  scrollbar-width: thin; /* Firefox */
+  scrollbar-color: #60a5fa #e5e7eb; /* thumb track */
+}
+.thumbs-scroll::-webkit-scrollbar {
+  height: 8px; /* horizontal bar height */
+}
+.thumbs-scroll::-webkit-scrollbar-track {
+  background: #e5e7eb;
+  border-radius: 9999px;
+}
+.thumbs-scroll::-webkit-scrollbar-thumb {
+  background-color: #60a5fa; /* blue-400 */
+  border-radius: 9999px;
+  border: 2px solid #e5e7eb;
+}
+.thumbs-scroll::-webkit-scrollbar-thumb:hover {
+  background-color: #2563eb; /* blue-600 */
+}
+
+[data-theme="dark"] .thumbs-scroll {
+  scrollbar-color: #60a5fa #111827; /* thumb track */
+}
+[data-theme="dark"] .thumbs-scroll::-webkit-scrollbar-track {
+  background: #111827; /* gray-900 */
+}
+[data-theme="dark"] .thumbs-scroll::-webkit-scrollbar-thumb {
+  background-color: #60a5fa; /* blue-400 */
+  border-color: #111827;
+}
+[data-theme="dark"] .thumbs-scroll::-webkit-scrollbar-thumb:hover {
+  background-color: #3b82f6; /* blue-500 */
+}
