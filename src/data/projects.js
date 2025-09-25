@@ -1,9 +1,3 @@
-// Gerold Portfolio
-import Gerold1 from '../assets/imgs/Gerold-Portfolio/Gerold-Portfolio-1.png'
-import Gerold2 from '../assets/imgs/Gerold-Portfolio/Gerold-Portfolio-2.png'
-import Gerold3 from '../assets/imgs/Gerold-Portfolio/Gerold-Portfolio-3.png'
-import Gerold4 from '../assets/imgs/Gerold-Portfolio/Gerold-Portfolio-4.png'
-
 // Recipes App
 import Recipes1 from '../assets/imgs/Recipes-App/Recipes-App-1.png'
 import Recipes2 from '../assets/imgs/Recipes-App/Recipes-App-2.png'
