@@ -28,6 +28,16 @@ import ForkFlame2 from '../assets/imgs/Fork-Flame/Fork-Flame-2.png'
 import ForkFlame3 from '../assets/imgs/Fork-Flame/Fork-Flame-3.png'
 import ForkFlame4 from '../assets/imgs/Fork-Flame/Fork-Flame-4.png'
 
+// E-commerce
+import Ecommerce1 from '../assets/imgs/E-commerce/E-commerce-1.png'
+import Ecommerce2 from '../assets/imgs/E-commerce/E-commerce-2.png'
+import Ecommerce3 from '../assets/imgs/E-commerce/E-commerce-3.png'
+import Ecommerce4 from '../assets/imgs/E-commerce/E-commerce-4.png'
+import Ecommerce5 from '../assets/imgs/E-commerce/E-commerce-5.png'
+import Ecommerce6 from '../assets/imgs/E-commerce/E-commerce-6.png'
+import Ecommerce7 from '../assets/imgs/E-commerce/E-commerce-7.png'
+import Ecommerce8 from '../assets/imgs/E-commerce/E-commerce-8.png'
+
 // WatchIt
 import WatchIt1 from '../assets/imgs/WatchIt/WatchIt-1.png'
 import WatchIt2 from '../assets/imgs/WatchIt/WatchIt-2.png'
@@ -65,6 +75,33 @@ export const projects = [
       github: 'https://github.com/KhvledT/Linkup',
     },
   },
+  {
+    id: 'ecommerce',
+    title: 'E-commerce Web Application',
+    image: Ecommerce1,
+    images: [Ecommerce1, Ecommerce2, Ecommerce3, Ecommerce4, Ecommerce5, Ecommerce6, Ecommerce7, Ecommerce8],
+    summary: 'Modern e-commerce platform with real payment integration, secure authentication, and SEO optimization.',
+    details: `A full-featured e-commerce web application built with Next.js, TypeScript, Tailwind CSS, and shadcn/ui. 
+    The platform supports real payment integration with Stripe, secure checkout, and complete protection of customer data. 
+    It includes shopping cart, order management, user profile, and real account system powered by NextAuth for authentication. 
+    Context API ensures efficient state management and smooth data flow across the app. 
+    Designed as a Single Page Application (SPA) with reusable UI components, dynamic routing, and strong SEO optimization. 
+    Achieved high Lighthouse scores: Performance 96, Accessibility 90, SEO 100, Best Practices 100.`,
+    tech: [
+      'Next.js',
+      'TypeScript',
+      'Tailwind CSS',
+      'shadcn/ui',
+      'NextAuth',
+      'Context API',
+      'Stripe',
+    ],
+    links: {
+      display: 'both',
+      demo: 'https://e-commerce-ashy-two-19.vercel.app/',
+      github: 'https://github.com/KhvledT/E-Commerce',
+    },
+  },  
   {
     id: 'watchit',
     title: 'WatchIt',
@@ -146,26 +183,9 @@ export const projects = [
     The project emphasizes clean, scalable code that makes it easy to maintain and expand in the future, while offering a modern and professional user interface.`,
     tech: ['React', 'Bootstrap 5', 'Material UI', 'Figma'],
     links: {
-      display: 'both',
+      display: 'demo',
       demo: 'https://khvledt.github.io/Devfolio-Portfolio/',
       github: 'https://github.com/KhvledT/Devfolio-Portfolio',
-    },
-  },
-  {
-    id: 'gerold-portfolio',
-    title: 'Gerold – Portfolio Website',
-    image: Gerold1,
-    images: [Gerold1, Gerold2, Gerold3, Gerold4],
-    summary: 'A responsive personal portfolio website built entirely with vanilla HTML, CSS, and JavaScript, focusing on performance and usability.',
-    details: `Gerold Portfolio is a clean and modern portfolio website developed without external frameworks, using only HTML, CSS, and JavaScript. 
-    It is fully responsive across all devices and optimized for both performance and accessibility. 
-    The project features manually coded animations and transitions to deliver a smooth browsing experience. 
-    Key sections include Home, About, Projects, and Contact, offering a well-structured and professional showcase of work. 
-    This project served as an excellent opportunity to strengthen core front-end skills, ensuring a strong foundation in performance, structure, and usability.`,
-    tech: ['HTML', 'CSS', 'JavaScript'],
-    links: {
-      display: 'demo', // 'both' | 'demo' | 'github'
-      demo: 'https://khvledt.github.io/Gerold-Portfolio/',
     },
   }
 ]
